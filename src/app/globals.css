@@ -59,7 +59,7 @@ body {
 
 @font-face {
   font-family: "Lalezar";
-  src: url("/public/fonts/Lalezar-Regular.ttf");
+  src: url("/public/fonts/Lalezar-Font/TTF/Lalezar-Regular.ttf");
 }
 .lalezar{
   font-family: "Lalezar",sans-serif;

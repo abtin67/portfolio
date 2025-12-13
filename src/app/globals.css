@@ -1,16 +1,21 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+ #hero ,#about, #project, #contact {
+  scroll-margin-top: 120px;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,7 +25,43 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+ background: #ededed ;
+
 }
+
+@layer base {
+  body {
+    @apply bg-white text-black dark:bg-slate-800 dark:text-white transition-colors duration-300;
+  }
+}
+ :root:where(.dark) body {
+    @apply bg-slate-800 text-white;
+  }
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#services{
+  scroll-margin-top: 120px;
+}
+@font-face {
+  font-family: "IranianSans";
+  src:  url("/public/fonts/A-Iranian-Sans/Iranian\ Sans.ttf");
+}
+
+.iraniansans{
+  font-family: "IranianSans",sans-serif;
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url("/public/fonts/Lalezar-Regular.ttf");
+}
+.lalezar{
+  font-family: "Lalezar",sans-serif;
+}
+

@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "logo":"/logo.png",
+        "title":"فروشگاه انلاین",
+        "image":"/e-commerce.png",
+        "href":"https://e-commerce-nu-bay-92.vercel.app/"
+    },
+    {
+        "id":2,
+        "logo":"/hero-img1.webp",
+        "title":"تخفیف چی",
+        "image":"/offchi.png",
+        "href":"https://offchi.vercel.app/"
+    },
+    {
+        "id":3,
+        "logo":"/digistyle-logo.png",
+        "title":" دیجی استایل",
+        "image":"/digistyle-img.png",
+        "href":"https://abtin67.github.io/djstyle/#/fcomponent"
+    },
+    {
+        "id":4,
+        "logo":"/otp.png",
+        "title":"صفحه ورود",
+        "image":"/otpcode.png",
+        "href":"https://otp-code-pi.vercel.app/"
+    },
+    {
+        "id":5,
+        "logo":"/coming-soon.jpeg",
+        "title":"به زودی...",
+        "image":"/coming-soon.jpeg",
+        "href":"#"
+    }
+]

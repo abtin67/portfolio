@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import projects from "@/jsonData/projects.json";
-import { Button, Dialog, Flex, Text, TextField } from "@radix-ui/themes";
 
 export default function Project() {
   const [selectId, setSelectId] = useState(null);

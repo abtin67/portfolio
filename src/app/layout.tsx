@@ -3,7 +3,6 @@ import { Lalezar, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "@radix-ui/themes/styles.css";
 import  ThemeProvider  from "@/components/theme-provider/theme-provider";
 
 

@@ -1,32 +1,32 @@
 [
-    {
-        "id":1,
-        "title":"ادمینی سایت و سوشال مدیا",
-        "image":"/Mobile Marketing-bro.png"
-    },
-    {
-        "id":2,
-        "title":"پشتیبانی 24 ساعته",
-        "image":"/Active Support-bro.png"
-    },
-    {
-        "id":3,
-        "title":"خدمات هوش مصنوعی",
-        "image":"/people creating robot-rafiki.png"
-    },
-    {
-        "id":4,
-        "title":"خدمات سئو",
-        "image":"/SEO analytics team-rafiki.png"
-    },
-    {
-        "id":5,
-        "title":"خدمات افزایش امنیت سایت",
-        "image":"/Security On-bro.png"
-    },
-    {
-        "id":6,
-        "title":"دیزاین",
-        "image":"/Design team-bro.png"
-    }
+  {
+    "id": 1,
+    "title": "توسعه رابط کاربری مدرن",
+    "image": "/UI Development-bro.png"
+  },
+  {
+    "id": 2,
+    "title": "بهینه‌سازی سرعت و عملکرد",
+    "image": "/Performance Optimization-bro.png"
+  },
+  {
+    "id": 3,
+    "title": "مدیریت حالت و فرم‌ها",
+    "image": "/State Management-bro"
+  },
+  {
+    "id": 4,
+    "title": "پیاده‌سازی سئو فرانت‌اند",
+    "image": "/Frontend SEO-bro.jpg"
+  },
+  {
+    "id": 5,
+    "title": "افزایش امنیت سمت کاربر",
+    "image": "/Frontend Security-bro2.jpg"
+  },
+  {
+    "id": 6,
+    "title": "طراحی و دیزاین UI/UX",
+    "image": "/UIUX Design-bro3.jpg"
+  }
 ]

@@ -20,22 +20,22 @@ export default function Services() {
     <>
      <section>
        <div  className="w-full px-[8%] lg:px-[12%] mt-5">
-        <div className="border-3 border-gray-300 dark:border-gray-700">
+        <div className="border-4 border-gray-300 dark:border-gray-700">
           <div className="text-center pt-8 pb-6 text-2xl md:text-4xl ">
-            <h1 className="border-b-3 border-gray-400 mx-5 pb-3">
+            <h2 className="border-b-3 border-gray-400 mx-5 pb-3">
               خدماتی که میتوانید به ما بسپارید.{" "}
-            </h1>
+            </h2>
           </div>
           <div className=" my-2 ">
 
              
             <Swiper
-              spaceBetween={20}
+              spaceBetween={24}
               slidesPerView={1}
               loop={true}
               modules={[Autoplay]}
-              autoplay={{ delay: 2500 }}
-              speed={2000}
+              autoplay={{ delay: 3000 }}
+              speed={1000}
               breakpoints={{
                 1200: { slidesPerView: 4 },
                 991: { slidesPerView: 3 },
@@ -45,8 +45,10 @@ export default function Services() {
             >
               {servicesTitle.map((service) => (
                 
-                  <SwiperSlide key={service.id} className="py-3 w-fulltransition-all duration-500 ">
-                    <div className="mb-5 ">
+                  <SwiperSlide key={service.id} className="py-3 w-full transition-all duration-500 ">
+                   <div className="relative w-full  mb-4 overflow-hidden rounded-xl bg-gray-100 dark:bg-slate-700">
+                    <div className="relative w-full  mb-4 overflow-hidden rounded-xl
+                     bg-gray-100 dark:bg-slate-700">
                       <Image
                         src={service.image}
                         alt={service.title}
@@ -56,7 +58,10 @@ export default function Services() {
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-xl text-gray-800 ">{service.title}</p>
+                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors">
+                      {service.title}
+                    </h3>
+                    </div>
                     </div>
                   </SwiperSlide>
           

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import photoMe from "../../../public/photo-me.jpg";
+import photoMe from "../../../../../public/photo-me.jpg";
 import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import { motion } from "framer-motion";

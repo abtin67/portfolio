@@ -1,6 +1,9 @@
+"use client"
+
 import { motion } from "framer-motion";
 import { Vazirmatn } from "next/font/google";
 import { FaDownload } from "react-icons/fa";
+import {useTranslations} from 'next-intl';
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
@@ -8,6 +11,7 @@ const vazirmatn = Vazirmatn({
 });
 
 export default function About() {
+  const t = useTranslations('about');
   return (
     <div>
       <motion.div
@@ -16,20 +20,13 @@ export default function About() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="text-3xl text-center py-6 lalezar dark:text-gray-300">
-  درباره من
+        {t('title')}
         </h1>
         <div
           id="about"
           className={`text-lg fade-in md:text-justify dark:text-gray-400  px-6 ${vazirmatn.className}`}
         >
-          من فریدون عاقبتی هستم؛ توسعه‌دهنده‌ی فرانت‌اند با تمرکز بر طراحی
-          رابط‌های کاربری مدرن، سریع و کاملاً بومی‌سازی‌شده برای کاربران
-          فارسی‌زبان. علاقه‌مند به ساختن تجربه‌هایی هستم که هم از نظر فنی بی‌نقص
-          باشن، هم از نظر فرهنگی قابل اعتماد و دلنشین. با استفاده از ابزارهایی
-          مثل React، Next.js و TailwindCSS، تلاش می‌کنم رابط‌هایی بسازم که هم
-          زیبا باشن، هم سریع، هم قابل فهم برای مخاطب ایرانی. هدفم اینه که
-          تکنولوژی رو با زبان و فرهنگ خودمون هماهنگ کنم؛ چون باور دارم طراحی خوب
-          فقط به ظاهر نیست، بلکه به درک مخاطب هم بستگی داره.
+        {t('description')}
         </div>
         <a
           href="/resume.pdf" 
@@ -44,7 +41,7 @@ export default function About() {
           
           <FaDownload className="text-md text-blue-200 group-hover:text-blue-600 transition-transform group-hover:-translate-y-1 dark:text-gray-300" />
 
-          <span className="font-medium text-md">دانلود رزومه </span>
+          <span className="font-medium text-md">{t('resume')}</span>
         </a>
       </motion.div>
     </div>

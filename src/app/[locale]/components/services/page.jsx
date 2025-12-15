@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 
-import servicesTitle from "../../jsonData/services.json";
+import servicesTitle from "../../../../jsonData/services.json";
 
 
 

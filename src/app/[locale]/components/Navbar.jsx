@@ -1,6 +1,6 @@
 "use client"; // برای استفاده از ThemeToggle
 
-import { ThemeToggle } from "@/components/toggle/page"; // مسیر ایمپورت را چک کنید
+import { ThemeToggle } from "@/app/[locale]/components/toggle/page"; // مسیر ایمپورت را چک کنید
 import {
   FaHome,
   FaUserAlt,
@@ -8,17 +8,24 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { GrServices } from "react-icons/gr";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
-// لیست آیتم‌های منو (برای جلوگیری از تکرار کد)
-const navLinks = [
-  { href: "#hero", label: "خانه", icon: <FaHome /> },
-  { href: "#about", label: "درباره من", icon: <FaUserAlt /> },
-  { href: "#services", label: "خدمات", icon: <GrServices /> },
-  { href: "#project", label: "نمونه کارها", icon: <FaProjectDiagram /> },
-  { href: "#contact", label: "تماس", icon: <FaEnvelope /> },
-];
 
 export default function Navbar() {
+
+   const t = useTranslations("nav");
+
+
+    const navLinks = [
+    { href: "#hero", label: t("home"), icon: <FaHome /> },
+    { href: "#about", label: t("about"), icon: <FaUserAlt /> },
+    { href: "#services", label: t("services"), icon: <GrServices /> },
+    { href: "#project", label: t("projects"), icon: <FaProjectDiagram /> },
+    { href: "#contact", label: t("contact"), icon: <FaEnvelope /> },
+  ];
+
+
   return (
     // nav اصلی را فقط به عنوان نگهدارنده فضا در نظر گرفتم (بدون پس‌زمینه مزاحم)
     <nav className="w-full flex justify-center pt-4 absolute top-0 z-50 left-0 right-0">
@@ -73,11 +80,15 @@ export default function Navbar() {
             >
               {link.label}
               {/* خط متحرک زیر لینک */}
-               <span className="absolute -bottom-1 right-0 w-0 h-1 bg-red-600 transition-all duration-500 group-hover:w-full rounded-full"></span>
+               <span className="absolute -bottom-1 start-0 w-0 h-1 bg-red-600 transition-all duration-500 group-hover:w-full rounded-full"></span>
             </a>
            
           </div>
         ))}
+
+        <div>
+          <LanguageSwitcher />
+        </div>
       </div>
     </nav>
   );

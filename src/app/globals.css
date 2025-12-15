@@ -1,12 +1,13 @@
 @import "tailwindcss";
 @variant dark (&:where(.dark, .dark *));
 
-
-
-html{
+html {
   scroll-behavior: smooth;
 }
- #hero ,#about, #project, #contact {
+#hero,
+#about,
+#project,
+#contact {
   scroll-margin-top: 120px;
 }
 
@@ -14,8 +15,6 @@ html{
   --background: #ffffff;
   --foreground: #171717;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -26,8 +25,12 @@ html{
 
 body {
   height: 100vh;
- background: #ededed ;
+  background: #ededed;
+  font-family: var(--font-vazir), sans-serif;
 
+   [dir="ltr"] body {
+    font-family: var(--font-inter), sans-serif;
+  }
 }
 
 @layer base {
@@ -35,33 +38,38 @@ body {
     @apply bg-white text-black dark:bg-slate-800 dark:text-white transition-colors duration-300;
   }
 }
- :root:where(.dark) body {
-    @apply bg-slate-800 text-white;
-  }
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+:root:where(.dark) body {
+  @apply bg-slate-800 text-white;
 }
 
-#services{
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#services {
   scroll-margin-top: 120px;
 }
 @font-face {
   font-family: "IranianSans";
-  src:  url("/public/fonts/A-Iranian-Sans/Iranian\ Sans.ttf");
+  src: url("/public/fonts/A-Iranian-Sans/Iranian\ Sans.ttf");
 }
 
-.iraniansans{
-  font-family: "IranianSans",sans-serif;
+.iraniansans {
+  font-family: "IranianSans", sans-serif;
 }
 
 @font-face {
   font-family: "Lalezar";
   src: url("/public/fonts/Lalezar-Font/TTF/Lalezar-Regular.ttf");
 }
-.lalezar{
-  font-family: "Lalezar",sans-serif;
+.lalezar {
+  font-family: "Lalezar", sans-serif;
 }
-

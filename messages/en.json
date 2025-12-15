@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "feriweb",
+    "welcome": "Welcome to our website",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "services": "Services",
+    "projects": "Portfolio",
+    "contact": "Contact"
+  },
+  "navbar": {},
+  "home": {
+    "title": "Hi , I am ferydoun",
+    "description": "Frontend developer with React.js, Next.js, and TailwindCSS.",
+    "heroTitle": "Build Amazing Apps",
+    "heroDescription": "We help you create professional applications",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "I am Freydoun Aghebati, a frontend developer focused on designing modern, fast, and fully localized user interfaces for Persian-speaking audiences. I am passionate about creating experiences that are both technically flawless and culturally trustworthy. Using tools such as React, Next.js, and TailwindCSS, I strive to build interfaces that are beautiful, fast, and intuitive for Iranian users. My goal is to align technology with our language and culture, because I believe good design is not only about appearance—it’s about truly understanding the audience.",
+    "resume": "Download CV"
+  },
+  "footer": {
+    "copyright": "All rights reserved © {2026}",
+    "madeWith": "Made with ❤️"
+  }
+}

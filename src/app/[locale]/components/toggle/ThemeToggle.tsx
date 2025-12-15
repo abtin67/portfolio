@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // آیکون‌های ماه و خورشید (می‌توانید هر آیکون دیگری انتخاب کنید)
 import { BsSun, BsMoonStarsFill } from "react-icons/bs";
 
-export function ThemeToggle() {
+export default function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 

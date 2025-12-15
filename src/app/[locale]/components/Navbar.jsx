@@ -1,6 +1,6 @@
 "use client"; // برای استفاده از ThemeToggle
 
-import { ThemeToggle } from "@/app/[locale]/components/toggle/page"; // مسیر ایمپورت را چک کنید
+import  ThemeToggle  from "@/app/[locale]/components/toggle/ThemeToggle"; // مسیر ایمپورت را چک کنید
 import {
   FaHome,
   FaUserAlt,
@@ -11,20 +11,16 @@ import { GrServices } from "react-icons/gr";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations } from "next-intl";
 
-
 export default function Navbar() {
+  const t = useTranslations("nav");
 
-   const t = useTranslations("nav");
-
-
-    const navLinks = [
+  const navLinks = [
     { href: "#hero", label: t("home"), icon: <FaHome /> },
     { href: "#about", label: t("about"), icon: <FaUserAlt /> },
     { href: "#services", label: t("services"), icon: <GrServices /> },
     { href: "#project", label: t("projects"), icon: <FaProjectDiagram /> },
     { href: "#contact", label: t("contact"), icon: <FaEnvelope /> },
   ];
-
 
   return (
     // nav اصلی را فقط به عنوان نگهدارنده فضا در نظر گرفتم (بدون پس‌زمینه مزاحم)
@@ -55,7 +51,6 @@ export default function Navbar() {
           <ThemeToggle />
         </div>
 
-       
         {navLinks.map((link, index) => (
           <div
             key={index}
@@ -80,9 +75,8 @@ export default function Navbar() {
             >
               {link.label}
               {/* خط متحرک زیر لینک */}
-               <span className="absolute -bottom-1 start-0 w-0 h-1 bg-red-600 transition-all duration-500 group-hover:w-full rounded-full"></span>
+              <span className="absolute -bottom-1 start-0 w-0 h-1 bg-red-600 transition-all duration-500 group-hover:w-full rounded-full"></span>
             </a>
-           
           </div>
         ))}
 

@@ -23,12 +23,12 @@ export default function Navbar() {
   ];
 
   return (
-    // nav اصلی را فقط به عنوان نگهدارنده فضا در نظر گرفتم (بدون پس‌زمینه مزاحم)
+  
     <nav className="w-full flex justify-center pt-4 absolute top-0 z-50 left-0 right-0">
       <div
         className="
-          flex items-center justify-between  gap-4 lg:gap-10
-          w-[90%] md:w-3/4 mx-auto fixed top-4 rounded-2xl py-3 px-6 
+          flex items-center justify-between  gap-3 lg:gap-10
+          w-[93%] md:w-3/4 mx-auto fixed top-4 rounded-2xl py-3 px-3 
           transition-all duration-500 shadow-lg backdrop-blur-[5px] 
           
           

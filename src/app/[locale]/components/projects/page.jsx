@@ -13,12 +13,12 @@ export default function Project() {
   return (
     <>
       <div className="w-full px-[8%] lg:px-[12%] py-10 mt-5">
-       <div className="bg-gray-400 slide-up px-2 rounded-xl pb-1 shadow">
+       <div className="bg-gray-400 slide-up px-2 rounded-lg pb-1 shadow">
          <div className="text-black w-full px-2 pt-5">
           <h1 className="font-bold text-xl pb-1">نمونه کارها</h1>
           <p>برای دیدن انلاین نمونه کارها روی لینک کلیک کنید.</p>
         </div>
-       <div className="w-full bg-gray-300  my-10 py-5 px-6 rounded-md flex gap-6 flex-wrap ">
+       <div className="w-full  bg-gray-300  my-10 py-5 px-6 rounded-md flex items-center justify-center gap-6 flex-wrap ">
          
         {
           projects.map(item =>(

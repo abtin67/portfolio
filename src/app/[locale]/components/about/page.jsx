@@ -24,7 +24,7 @@ export default function About() {
         </h1>
         <div
           id="about"
-          className={`text-lg fade-in md:text-justify dark:text-gray-400  px-6 ${vazirmatn.className}`}
+          className={`text-lg leading-8 fade-in md:text-justify dark:text-gray-400  px-6 ${vazirmatn.className}`}
         >
         {t('description')}
         </div>
@@ -32,7 +32,7 @@ export default function About() {
           href="/resume.pdf" 
           download="Matin-Resume.pdf" 
           className="
-    group flex w-fit items-center gap-3 rounded-xl border border-gray-400 px-4 py-2 mt-4 mb-6
+    group flex w-fit items-center gap-3 rounded-xl border border-gray-400 px-4 py-2 m-6
     transition-all duration-300 ms-6 bg-blue-600
     hover:bg-gray-100 hover:shadow-md
     dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700

@@ -6,8 +6,11 @@ import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function PortfolioCart() {
+
+  const t = useTranslations('portfolioCart')
   return (
     <>
       <div className="w-full p-10 sticky top-0 left-0 slide-left dark:shadow">
@@ -24,14 +27,14 @@ export default function PortfolioCart() {
             animate={{ opacity: 1, x: 0, color: "#000" }} 
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-200">فریدون عاقبتی</h1>
+          <h1 className="text-md sm:text-2xl font-bold text-gray-900 dark:text-gray-200">{t('title')}</h1>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0, color: "#000" }}
             transition={{ duration: 1.0, ease: "easeOut" }}
           >
-         <p className=" text-lg dark:text-gray-300">خلق کردن و ساختن چیزهایی که دوست دارم.</p>
+         <p className="text-md md:text-lg dark:text-gray-300">{t('description')}</p>
           </motion.div>
           
           <div className="w-full text-3xl pb-3 flex justify-center gap-5 text-gray-600 dark:text-gray-400">

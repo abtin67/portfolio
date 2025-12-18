@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: MetadataProps) {
     ],
     authors: [{ name: "فریدون عاقبتی" }],
     creator: "فریدون عاقبتی",
-    icons: "/fiveicon.jpg",
+    icons: "/photo_5917730945911950358_x.jpg",
   };
 }
 

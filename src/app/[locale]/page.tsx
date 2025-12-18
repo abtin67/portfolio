@@ -26,7 +26,7 @@ export default function Home() {
         className={`w-full  dark:bg-slate-800 dark:text-gray-200  mt-8 px-[8%] lg:px-[12%]`}
       >
         <motion.h1
-          className="text-2xl  dark:bg-slate-800 font-bold text-center mt-28 lg:pt-20"
+          className="text-4xl  dark:bg-slate-800 font-bold text-center mt-28 lg:pt-20"
           initial={{ opacity: 0, y: 30, color: "#1d4ed8" }}
           animate={{ opacity: 1, y: 0, color: "#000" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -37,7 +37,7 @@ export default function Home() {
         </motion.h1>
 
         <motion.div
-          className="text-xl dark:text-blue-400 text-gray-600  text-center pt-5"
+          className="text-lg dark:text-blue-400 text-gray-600  text-center pt-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

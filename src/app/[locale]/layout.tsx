@@ -1,6 +1,5 @@
 
 import { Inter, Lalezar, Vazirmatn } from "next/font/google";
-// import "../../"; // این خط اشتباه بود و حذف شد
 import "../globals.css"; 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -83,7 +82,9 @@ export default async function RootLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar />
-            <main>{children}</main>
+            <main>
+            {children}
+            </main>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>

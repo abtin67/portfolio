@@ -2,46 +2,26 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
-import { useTransition } from "react";
+// 👇 نکته کلیدی: Link و usePathname باید از فایل نویگیشن خودتان باشند
+// اگر فایل شما در src/navigation.ts است آدرس را تنظیم کنید
+import { usePathname, Link } from "@/i18n/navigation"; 
 
 export default function LanguageSwitcher() {
-  const locale = useLocale(); // دریافت زبان فعلی (fa یا en)
-  const router = useRouter();
-  const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
+  const locale = useLocale();
+  const pathname = usePathname(); // مسیر فعلی را بدون /fa یا /en برمی‌گرداند
 
-  const toggleLanguage = () => {
-    // تعیین زبان جدید
-    const nextLocale = locale === "fa" ? "en" : "fa";
+  // محاسبه زبان مقصد
+  const nextLocale = locale === "fa" ? "en" : "fa";
 
-    // ساخت آدرس جدید
-    // مثال: تبدیل /fa/about به /en/about
-    // با روش split مطمئن می‌شویم فقط بخش اول آدرس تغییر می‌کند
-    const segments = pathname.split("/");
-    segments[1] = nextLocale;
-    const newPath = segments.join("/");
-
-    startTransition(() => {
-      router.replace(newPath);
-    });
-  };
-
- return (
-    <button
-      onClick={toggleLanguage}
-      disabled={isPending}
-      className={`
-        flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors border
-        ${isPending 
-          ? "opacity-50 cursor-not-allowed" 
-          : "hover:bg-accent hover:text-accent-foreground border-transparent hover:border-border"
-        }
-      `}
+  return (
+    <Link
+      href={pathname}
+      locale={nextLocale}
+      className="flex items-center gap-2 px-3 py-1.5 rounded-md border border-gray-600 hover:bg-gray-800 transition-colors"
     >
-      <span className="uppercase font-bold tracking-wider">
+      <span className="text-white font-bold uppercase text-sm">
         {locale === "fa" ? "En" : "Fa"}
       </span>
-    </button>
+    </Link>
   );
 }

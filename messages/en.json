@@ -54,8 +54,51 @@
       "title": "UI/UX Design and Crafting"
     }
   },
+   "projects": {
+    "title":"My Portfolio",
+    "project1": {
+      "title": "E-Commerce"
+    },
+    "project2": {
+      "title": "OffChi"
+    },
+    "project3": {
+      "title": "DigiStyle"
+    },
+    "project4": {
+      "title": "Login Page"
+    },
+    "project5": {
+      "title": "Coming Soon..."
+    }
+  },
+   "Contact": {
+    "sectionTitle": "Direct Contact",
+    "askMe": "Ask Ferydoun",
+    "labels": {
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "How can I help you?"
+    },
+    "placeholders": {
+      "name": "Name...",
+      "phone": "Number...",
+      "email": "Email...",
+      "subject": "Subject...",
+      "textarea":"How can I help you?"
+    },
+    "info": {
+      "linkedin": "LinkedIn",
+      "call": "Call Me",
+      "telegram": "Telegram",
+      "location": "Tehran, Iran"
+    },
+    "sendBtn": "Send Message"
+  },
   "footer": {
-    "copyright": "All rights reserved © {2026}",
-    "madeWith": "Made with ❤️"
+    "copyright": "© 2025 Freydoun Aghebati – All rights reserved."
+
   }
 }

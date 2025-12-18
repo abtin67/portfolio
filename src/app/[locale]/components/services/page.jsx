@@ -78,18 +78,18 @@ export default function Services() {
                 
                   <SwiperSlide key={service.id} className="py-3 w-full transition-all duration-500 ">
                    <div className="relative w-full  mb-4 overflow-hidden rounded-lg bg-gray-100 dark:bg-slate-700">
-                    <div className="relative w-full  mb-4 overflow-hidden rounded-xl
+                    <div className="relative w-full h-48 pt-5 overflow-hidden rounded-xl
                      bg-gray-100 dark:bg-slate-700">
                       <Image
                         src={service.image}
                         alt={service.title}
                         width={350}
                         height={250}
-                        className="object-contain hover:scale-95 transition-all duration-500"
+                        className="object-contain hover:scale-95 h-36 transition-all duration-500"
                       />
                     </div>
                     <div className="text-center">
-                      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors">
+                      <h3 className="text-lg mb-10 font-bold text-gray-800 dark:text-gray-200 group-hover:text-green-700 dark:group-hover:text-green-400 transition-colors">
                       {service.title}
                     </h3>
                     </div>

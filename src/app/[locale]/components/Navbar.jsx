@@ -29,7 +29,7 @@ export default function Navbar() {
         className="
           flex items-center justify-between  gap-3 lg:gap-10
           w-[93%] md:w-3/4 mx-auto fixed top-4 rounded-2xl py-3 px-3 
-          transition-all duration-500 shadow-lg backdrop-blur-[5px] 
+          transition-all duration-500 shadow-lg backdrop-blur-[2px] 
           
           
        

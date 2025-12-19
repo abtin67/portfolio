@@ -1,8 +1,10 @@
 {
-  "common": {
-    "siteName": "feriweb",
-    "welcome": "Welcome to our website",
-    "loading": "Loading..."
+ "common": {
+    "siteName": "FeriWeb",
+    "welcome": "Building Digital Experiences That Matter",
+    "intro": "Front-end Developer & UI Enthusiast",
+    "loading": "Bringing ideas to life...",
+    "cta": "Let's build something great"
   },
   "nav": {
     "home": "Home",

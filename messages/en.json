@@ -93,7 +93,9 @@
       "linkedin": "LinkedIn",
       "call": "Call Me",
       "telegram": "Telegram",
-      "location": "Tehran, Iran"
+      "location": "Tehran, Iran",
+      "github":"My Github",
+      "desGit":"View open source code"
     },
     "sendBtn": "Send Message"
   },

@@ -40,7 +40,7 @@ I believe in using the right tools for the job. This project is built with:
 
 I am currently **available for freelance opportunities** and open to collaborating on innovative projects. If you like my work, feel free to reach out!
 
--   **LinkedIn:** [Your LinkedIn Profile Link]
+-   **LinkedIn:** [(https://www.linkedin.com/in/ferydoun-aghebati-146271381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)]
 -   **Email:** [Your Email Address]
 -   **Website:** [feriweb.ir](https://feriweb.ir)
 

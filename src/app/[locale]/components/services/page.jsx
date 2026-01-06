@@ -51,9 +51,9 @@ export default function Services() {
     <>
      <section>
        <div  className="w-full px-[8%]  lg:px-[12%] mt-5">
-        <div className="border-4 border-gray-300 dark:border-gray-700 rounded-lg">
+        <div className="border-2 shadow-lg dark:bg-slate-890 border-gray-300 dark:border-[#2f2f2f] rounded-lg">
           <div className="text-center pt-8 pb-6 text-2xl md:text-4xl ">
-            <h2 className="border-b-3 border-gray-400 mx-5 pb-3">
+            <h2 className="border-b-3 border-gray-400 dark:border-[#f2f2f2] mx-5 pb-3">
              {t('title')}
             </h2>
           </div>

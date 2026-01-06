@@ -1,5 +1,5 @@
 {
- "common": {
+  "common": {
     "siteName": "FeriWeb",
     "welcome": "Building Digital Experiences That Matter",
     "intro": "Front-end Developer & UI Enthusiast",
@@ -12,9 +12,9 @@
     "services": "Services",
     "projects": "Portfolio",
     "contact": "Contact",
-    "portfolioCart":"PortfolioCart"
+    "portfolioCart": "PortfolioCart"
   },
-  
+
   "home": {
     "title": "Hi , I am Ferydoun",
     "description": "Frontend developer with React.js, Next.js, and TailwindCSS.",
@@ -28,14 +28,14 @@
     "description": "I am Freydoun Aghebati, a frontend developer focused on designing modern, fast, and fully localized user interfaces for Persian-speaking audiences. I am passionate about creating experiences that are both technically flawless and culturally trustworthy. Using tools such as React, Next.js, and TailwindCSS, I strive to build interfaces that are beautiful, fast, and intuitive for Iranian users. My goal is to align technology with our language and culture, because I believe good design is not only about appearance—it’s about truly understanding the audience.",
     "resume": "Download CV"
   },
-  "portfolioCart":{
-    "title":"Ferydoun Aghebati",
+  "portfolioCart": {
+    "title": "Ferydoun Aghebati",
     "description": "Creating and crafting what I love."
   },
-  "technology":{
-    "title":"Technologies that I work with"
+  "technology": {
+    "title": "Technologies that I work with"
   },
-   "services": {
+  "services": {
     "title": "Services You Can Entrust to Us.",
     "service1": {
       "title": "Modern UI Development"
@@ -56,8 +56,8 @@
       "title": "UI/UX Design and Crafting"
     }
   },
-   "projects": {
-    "title":"My Portfolio",
+  "projects": {
+    "title": "My Portfolio",
     "project1": {
       "title": "E-Commerce"
     },
@@ -74,7 +74,7 @@
       "title": "Coming Soon..."
     }
   },
-   "Contact": {
+  "Contact": {
     "sectionTitle": "Direct Contact",
     "askMe": "Ask Ferydoun",
     "labels": {
@@ -89,20 +89,29 @@
       "phone": "Number...",
       "email": "Email...",
       "subject": "Subject...",
-      "textarea":"How can I help you?"
+      "textarea": "How can I help you?"
     },
     "info": {
       "linkedin": "LinkedIn",
       "call": "Call Me",
       "telegram": "Telegram",
       "location": "Tehran, Iran",
-      "github":"My Github",
-      "desGit":"View open source code"
+      "github": "My Github",
+      "desGit": "View open source code"
+    },
+    "validation": {
+      "nameMin": "Name must be at least 3 characters",
+      "nameMax": "Name must not exceed 20 characters",
+      "nameRegex": "Name can only contain English letters",
+      "emailInvalid": "Please enter a valid email",
+      "phoneInvalid": "Invalid phone number",
+      "required": "This field is required",
+      "messageRequired":"Please enter your message"
     },
     "sendBtn": "Send Message"
   },
+
   "footer": {
     "copyright": "© 2025 Freydoun Aghebati – All rights reserved."
-
   }
 }

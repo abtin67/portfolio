@@ -15,8 +15,11 @@ export default function Technolgy(){
   const t = useTranslations('technology')
     return(
         <>
-             <div  className=" dark:bg-slate-890 gap-5 shadow-lg border-2 px-6 border-gray-300 dark:border-[#2f2f2f]  rounded-lg my-5 py-8 text-blue-700">
-              <h3  className="text-black dark:text-gray-200 lalezar text-2xl md:text-4xl font-bold pb-10">
+             <div  className=" dark:bg-slate-890 gap-5
+              shadow-lg border  px-6 border-gray-300
+              dark:border-[#2f2f2f]  rounded-xl my-5
+               py-8 text-blue-700 dark:bg-slate-890">
+              <h3  className="text-black dark:text-gray-200  rounded-xl text-2xl md:text-4xl font-bold pb-10">
                {t('title')}
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-y-6   text-5xl items-center justify-between">

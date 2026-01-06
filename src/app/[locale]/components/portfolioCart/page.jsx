@@ -13,15 +13,18 @@ export default function PortfolioCart() {
   const t = useTranslations('portfolioCart')
   return (
     <>
-      <div className="w-full p-10 sticky top-0 left-0 slide-left dark:shadow">
-        <Image
+      <div className="w-full  p-10  sticky top-0 left-0 slide-left ">
+       
+        <div className="backdrop-blur-[2px] dark:bg-slate-890 border border-[#efef9f]  dark:border-[#2c2a2a] px-5 rounded-xl flex flex-col justify-center items-center py-4 gap-5 shadow-lg text-blue-800">
+          
+           <Image
           src={photoMe}
           alt="my photo"
           width={800}
           height={800}
           className=" object-contain rounded-t-lg hover:scale-95  dark:shadow-gray-400 transition-all duration-500"
         />
-        <div className="backdrop-blur-[2px] px-5 rounded-b-lg flex flex-col justify-center items-center py-4 gap-5 shadow-xl text-blue-800">
+          
           <motion.div
             initial={{ opacity: 0, x: -100 }} 
             animate={{ opacity: 1, x: 0, color: "#000" }} 
@@ -34,7 +37,7 @@ export default function PortfolioCart() {
             animate={{ opacity: 1, x: 0, color: "#000" }}
             transition={{ duration: 1.0, ease: "easeOut" }}
           >
-         <p className="text-md md:text-lg dark:text-gray-300">{t('description')}</p>
+         <p className="text-sm md:text-lg dark:text-gray-300">{t('description')}</p>
           </motion.div>
           
           <div className="w-full text-3xl pb-3 flex justify-center gap-5 text-gray-600 dark:text-gray-400">

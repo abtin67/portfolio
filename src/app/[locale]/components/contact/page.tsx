@@ -66,7 +66,7 @@ const Cantact = () => {
     <>
       <div className="w-full px-[8%] lg:px-[12%] py-10 my-2 gap-3">
         <div className="w-full  py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="w-full text-black border border-gray-400 rounded-2xl lg:w-1/2 px-5 gap-y-4 flex flex-col  backdrop-blur-[2px]  items-start justify-center  py-5">
+          <div className="w-full dark:bg-slate-899 shadow-xl text-black border border-gray-400 rounded-2xl lg:w-1/2 px-5 gap-y-4 flex flex-col  backdrop-blur-[2px]  items-start justify-center  py-5">
             <h1 className="text-xl text-start pb-3 lalezar dark:text-gray-300 leading-3">
               {t("sectionTitle")}
             </h1>
@@ -138,7 +138,7 @@ const Cantact = () => {
               </svg>
             </Link>
           </div>
-          <div className="w-full lg:w-1/2 pt-5 border border-gray-400 rounded-2xl  backdrop-blur-2xl">
+          <div className="w-full dark:bg-slate-899 shadow-xl lg:w-1/2 pt-5 border  border-gray-400 rounded-2xl  backdrop-blur-2xl">
             <h1 className="px-5 text-xl lalezar pt-2 pb-5 text-start">
               {t("askMe")}
             </h1>

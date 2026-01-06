@@ -29,7 +29,7 @@ export default function About() {
         {t('description')}
         </div>
         <a
-          href="/resume.pdf" 
+          href="/public/Ferydoun_Aghebati_Frontend_Developer.pdf" 
           download="Matin-Resume.pdf" 
           className="
     group flex w-fit items-center gap-3 rounded-xl border border-gray-400 px-4 py-2 m-6
